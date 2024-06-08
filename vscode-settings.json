@@ -1,0 +1,104 @@
+{
+    // Workbench Appearance
+    "workbench.colorTheme": "Make Apps Theme", // Sets the color theme for the workbench
+    "workbench.iconTheme": "helium-icon-theme", // Sets the icon theme for the workbench
+    "workbench.settings.editor": "json", // Opens settings in JSON format
+    "workbench.settings.useSplitJSON": true, // Splits settings editor into two JSON views
+    "workbench.settings.openDefaultSettings": true, // Opens default settings in the editor
+    "workbench.startupEditor": "none", // Controls what editor to show at startup
+    "workbench.editor.enablePreview": false, // Disables editor preview
+    "workbench.editor.enablePreviewFromCodeNavigation": true, // Enables preview from code navigation
+
+    // Editor Settings
+    "editor.fontSize": 16, // Sets the font size in the editor
+    "editor.fontFamily": "JetBrainsMono-Regular", // Sets the font family in the editor
+    "editor.fontWeight": "500", // Sets the font weight in the editor
+    "editor.tabCompletion": "on", // Enables tab completion
+    "editor.snippetSuggestions": "top", // Shows snippet suggestions at the top
+    "editor.formatOnSave": true, // Formats the file on save
+    "editor.suggestSelection": "first", // Controls the selection of suggestions
+    "editor.inlineSuggest.suppressSuggestions": true, // Suppresses inline suggestions
+    "editor.accessibilitySupport": "off", // Disables accessibility support
+    "editor.minimap.enabled": false, // Disables the minimap
+    "editor.linkedEditing": true, // Enables linked editing of tags
+
+    // Python Settings
+    "python.pythonPath": "/Library/Frameworks/Python.framework/Versions/3.10/bin/python3", // Path to the Python interpreter
+    "python.linting.pylintEnabled": false, // Disables pylint
+    "python.linting.enabled": true, // Enables linting
+    "python.linting.pylintArgs": [
+        "--disable=C0111"
+    ],
+    "python.formatting.provider": "black", // Sets black as the formatter
+    "python.defaultInterpreterPath": "/usr/local/bin/python3", // Default interpreter path
+    "python.testing.pytestEnabled": true, // Enables pytest for testing
+    "[python]": {
+        "editor.formatOnType": true // Formats Python code on type
+    },
+
+    // Terminal Settings
+    "terminal.integrated.fontSize": 16, // Sets the font size in the integrated terminal
+    "terminal.integrated.fontFamily": "JetBrainsMono-Regular", // Sets the font family in the integrated terminal
+    "terminal.integrated.fontWeight": "600", // Sets the font weight in the integrated terminal
+    "terminal.integrated.defaultProfile.osx": "zsh", // Sets the default terminal profile to zsh
+    "terminal.external.osxExec": "Warp.app", // Sets the external terminal to Warp.app
+    "terminal.integrated.env.osx": {
+        "FIG_NEW_SESSION": "1" // Environment variable for integrated terminal
+    },
+
+    // Debug Console Settings
+    "debug.console.fontFamily": "JetBrainsMono-Regular", // Sets the font family for the debug console
+
+    // Zen Mode Settings
+    "zenMode.centerLayout": false, // Disables centered layout in Zen mode
+    "zenMode.fullScreen": false, // Disables full screen in Zen mode
+    "zenMode.hideLineNumbers": false, // Shows line numbers in Zen mode
+
+    // Code Runner Settings
+    "code-runner.executorMap": {
+        "python": "clear && python -u" // Command to run Python files
+    },
+    "code-runner.clearPreviousOutput": true, // Clears previous output before running
+    "code-runner.showExecutionMessage": false, // Hides execution message
+    "code-runner.runInTerminal": true, // Runs code in terminal
+    "code-runner.saveFileBeforeRun": true, // Saves file before running
+
+    // File Explorer Settings
+    "explorer.confirmDragAndDrop": false, // Disables confirmation for drag and drop in explorer
+
+    // Advanced New File Settings
+    "advancedNewFile.exclude": {
+        "node_modules": true,
+        "node_modules_electron": true,
+        "dev": true,
+        "dist": true
+    }, // Excludes specific folders in advanced new file
+    "advancedNewFile.showInformationMessages": true, // Shows information messages in advanced new file
+    "advancedNewFile.convenienceOptions": [
+        "last",
+        "current",
+        "root"
+    ], // Sets convenience options in advanced new file
+
+    // Git Settings
+    "git.openRepositoryInParentFolders": "always", // Always opens repository in parent folders
+
+    // VS Icons Settings
+    "vsicons.dontShowNewVersionMessage": true, // Disables new version message for VS icons
+
+    // Miscellaneous Settings
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue", // Modifies IntelliCode suggestion selection
+    "tabnine.experimentalAutoImports": true, // Enables experimental auto imports for Tabnine
+    "errorLens.enabled": true, // Enables Error Lens
+    "cSpell.userWords": [
+        "chromedriver",
+        "pylint"
+    ], // Custom words for cSpell
+    "CodeGPT.apiKey": "Ollama", // API key for CodeGPT
+    "CodeGPT.Autocomplete.enabled": true, // Enables autocomplete for CodeGPT
+    "CodeGPT.Autocomplete.provider": "Ollama - llama3:70b-instruct", // Sets provider for CodeGPT autocomplete
+    "continue.telemetryEnabled": false, // Disables telemetry for Continue
+    "inference.model": "deepseek-coder:1.3b-base-q4_0", // Sets model for inference
+    "inference.custom.format": "deepseek", // Sets custom format for inference
+    "continue.enableTabAutocomplete": false // Disables tab autocomplete for Continue
+}
