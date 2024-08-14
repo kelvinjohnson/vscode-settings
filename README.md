@@ -217,6 +217,7 @@ These are my custom settings for VS Code, fine-tuned to optimise my workflow.
     // Code Runner Settings
     "code-runner.executorMap": {
         "python": "clear && python -u" // Command to run Python files
+        "java": "clear && java" // Command to run Java files
     },
     "code-runner.clearPreviousOutput": true, // Clears previous output before running
     "code-runner.showExecutionMessage": false, // Hides execution message
